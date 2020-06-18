@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Registro</title>   
+   
+    <!--Firestore-->
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+    
+    <section class="frente">
+        <div class="iniciar">
+
+            <h1>Registro de Usuarios&nbsp;
+                <img src="https://img.icons8.com/fluent/45/000000/parse-resume.png" style="vertical-align: -12px;" />
+                
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="search" id="idbuscar" style="width:180px; height:32px" placeholder=" &nbsp; Buscar:">
+
+            </h1><br>
+
+            <input type="number" id="idcedula" required
+            minlength="4" maxlength="8" size="10" style="width:140px; height:25px" placeholder=" &nbsp; Cédula: ">
+            <input type="text" id="idnombre" style="width:200px; height:25px" placeholder=" &nbsp; Nombre: ">
+            <input type="text" id="idapellido" style="width:200px; height:25px" placeholder=" &nbsp; Apellido: ">
+            <input type="email" id="idcorreo" style="width:200px; height:25px" placeholder=" &nbsp; Correo: ">
+            <button id="boton" onclick="guardar()" style="width:180px; height:28px"> Registrar Nuevos Datos</button>
+            <br>
+            <br>
+            <br>
+            
+            <table id="registro" cellspacing="5">
+
+                <thead>
+                    <tr>
+              
+                        <th>Cédula</th>              
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th><!--Editar--></th>
+                        <th><!--Eliminar--></th>
+                
+                    </tr>
+                </thead>
+            
+            <tbody id="tabla">    
+                
+                <!--contenido de la tabla-->
+
+            </tbody>
+              
+              </table>
+
+              
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+
+    <script>
+        $(document).ready() => 
+    </script>
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="pie">
+    <p>&nbsp; &nbsp; <font size="2">© &nbsp;<strong>2020</strong> &nbsp;  &nbsp; | &nbsp; &nbsp; Diseño: Gary Omar Veloz &nbsp; &nbsp; | &nbsp; &nbsp; +593 9976 3916</font> &nbsp;&nbsp;
+        <img src="https://img.icons8.com/color/18/000000/whatsapp.png" style="vertical-align:text-bottom"/></p>
+</footer>
+
+
+</html>

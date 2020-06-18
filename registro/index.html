@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Registro</title>   
+
+    <!--Firestore-->
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+    
+    <section class="frente">
+        <div class="iniciar">
+
+            <h1>Formulario de Registro </h1><br>
+            
+            
+                <img src="https://img.icons8.com/fluent/32/000000/fingerprint.png" style="vertical-align:-10px;" style="vertical-align:middle"/> &nbsp; 
+                    Cédula: &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type = "number" id="idcedula" style='width:210px; height:25px' placeholder=" &nbsp; ..."><br><br>
+                <img src="https://img.icons8.com/fluent/32/000000/credit-card.png" style="vertical-align:-8px;" style="vertical-align:middle"/> &nbsp; 
+                    Nombre: &nbsp; &nbsp; &nbsp; &nbsp; 
+                        <input type = "text" id="idnombre" style='width:210px; height:25px' placeholder=" &nbsp; ..."><br><br>
+                <img src="https://img.icons8.com/fluent/32/000000/badge.png" style="vertical-align:-8px;" style="vertical-align:middle"/> &nbsp; 
+                    Apellido: &nbsp; &nbsp; &nbsp; &nbsp; 
+                        <input type = "text" id="idapellido" style='width:210px; height:25px' placeholder=" &nbsp; ..."><br><br>
+                <img src="https://img.icons8.com/fluent/32/000000/mail.png" style="vertical-align:middle"/> &nbsp; 
+                    Correo: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        <input type = "email" id="idcorreo" style='width:210px; height:25px' placeholder=" &nbsp; usuario@dominio.com"><br><br>
+
+                <br>
+                
+                
+                <button id="boton" onclick="guardar()" style='width:110px; height:40px'> Registrarme</button>   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <font size="2">Al registrarse acepta dar sus datos </font> 
+                
+
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="pie">
+    <p>&nbsp; &nbsp; <font size="2">© &nbsp;<strong>2020</strong> &nbsp;  &nbsp; | &nbsp; &nbsp; Diseño: Gary Omar Veloz &nbsp; &nbsp; | &nbsp; &nbsp; +593 9976 3916</font> &nbsp;&nbsp;
+        <img src="https://img.icons8.com/color/18/000000/whatsapp.png" style="vertical-align:text-bottom"/></p>
+</footer>
+
+
+</html>

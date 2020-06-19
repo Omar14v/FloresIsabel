@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>Registro</title>   
+    <title>Registro de Productos</title>   
    
     <!--Firestore-->
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
@@ -17,20 +17,20 @@
     <section class="frente">
         <div class="iniciar">
 
-            <h1>Registro de Usuarios&nbsp;
-                <img src="https://img.icons8.com/fluent/45/000000/parse-resume.png" style="vertical-align: -12px;" />
+            <h1>Registro de Productos&nbsp;
+                <img src="https://img.icons8.com/fluent/48/000000/potted-plant.png" style="vertical-align: -12px;" />
                 
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <input type="search" id="idbuscar" style="width:180px; height:32px" placeholder=" &nbsp; Buscar:">
 
             </h1><br>
 
             <input type="number" id="idcedula" required
-            minlength="4" maxlength="8" size="10" style="width:140px; height:25px" placeholder=" &nbsp; Cédula: ">
+            minlength="4" maxlength="8" size="10" style="width:140px; height:25px" placeholder=" &nbsp; Id: ">
             <input type="text" id="idnombre" style="width:200px; height:25px" placeholder=" &nbsp; Nombre: ">
-            <input type="text" id="idapellido" style="width:200px; height:25px" placeholder=" &nbsp; Apellido: ">
-            <input type="email" id="idcorreo" style="width:200px; height:25px" placeholder=" &nbsp; Correo: ">
-            <button id="boton" onclick="guardar()" style="width:180px; height:28px"> Registrar Nuevos Datos</button>
+            <input type="text" id="idapellido" style="width:200px; height:25px" placeholder=" &nbsp; Descripción: ">
+            <input type="email" id="idcorreo" style="width:200px; height:25px" placeholder=" &nbsp; Precio: ">
+            <button id="boton" onclick="guardar()" style="width:180px; height:28px"> Registrar Nuevo Producto</button>
             <br>
             <br>
             <br>
@@ -40,10 +40,10 @@
                 <thead>
                     <tr>
               
-                        <th>Cédula</th>              
+                        <th>Id</th>              
                         <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Correo</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
                         <th><!--Editar--></th>
                         <th><!--Eliminar--></th>
                 

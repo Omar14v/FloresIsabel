@@ -30,19 +30,47 @@ body{
     
 }
 
-.boton {
+#idrecuperar{
+    text-decoration: none;
+    color: blue;
+    
+}
+
+#idboton {
     background-color: rgb(0, 162, 255);
     border-radius: 5px;
     color: #ffffff;
+    cursor:pointer;
+    border-style: none;
 }
 
-.texto1 {
+#idcorreo {
     border-radius: 5px;
     border: 1px solid rgb(201, 201, 201);
 
 }
 
-.texto2 {
+#idcontraseña {
+    border-radius: 5px;
+    border: 1px solid rgb(201, 201, 201);
+    
+}
+
+#idboton2 {
+    background-color: rgb(0, 162, 255);
+    border-radius: 5px;
+    color: #ffffff;
+    cursor:pointer;
+    border-style: none;
+}
+
+#idcorreo2 {
+    border-radius: 5px;
+    border: 1px solid rgb(201, 201, 201);
+
+}
+
+#idcontraseña2 {
     border-radius: 5px;
     border: 1px solid rgb(201, 201, 201);
     

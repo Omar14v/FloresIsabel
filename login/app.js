@@ -1,3 +1,12 @@
+function mostrar(){
+    document.getElementById('iniciar').style.display="none";
+}
+
+function ocultar(){
+    document.getElementById('registrar').style.display="block";
+}
+
+//ingresar
 function ingresar(){
 
     var correo = document.getElementById('idcorreo').value;
@@ -15,7 +24,7 @@ function ingresar(){
       });
 }
 
-
+//registrar
 function registrar(){
     var correo2 = document.getElementById('idcorreo2').value;
     var contraseña2 = document.getElementById('idcontraseña2').value;
@@ -37,6 +46,7 @@ function registrar(){
       });
 }
 
+//Observar
 function observar(){
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {

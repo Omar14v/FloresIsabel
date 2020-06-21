@@ -36,48 +36,53 @@
 </head>
 <body>
     
-    <section class="frente">
+    <section id="iniciar">
         <div>
 
             <h1>Iniciar Sesión <img src="https://img.icons8.com/fluent/40/000000/conflict.png" style="vertical-align:-10px;"/> </h1><br>
 
                 <img src="https://img.icons8.com/fluent/32/000000/badge.png" style="vertical-align:-8px;" style="vertical-align:middle"/> &nbsp; 
                     Correo:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-                        <input type = "email" id="idcorreo" style='width:210px; height:25px' name = "usuario" placeholder=" &nbsp; Ingrese su usuario..."><br><br>
+                        <input type = "email" id="idcorreo" style='width:210px; height:25px' name = "usuario" placeholder=" &nbsp; usuario@dominio.com"><br><br>
                 <img src="https://img.icons8.com/fluent/32/000000/blog.png" style="vertical-align:-8px;" style="vertical-align:middle"/> &nbsp; 
                     Contraseña: &nbsp; &nbsp;
-                        <input type = "password" id="idcontraseña" style='width:210px; height:25px' name = "clave" placeholder=" &nbsp; Ingrese su contraseña..."><br><br><br>
+                        <input type = "password" id="idcontraseña" style='width:210px; height:25px' name = "clave" placeholder=" &nbsp; Ingrese su contraseña"><br><br><br>
                 
-                <button onclick="ingresar()" id="idboton" style='width:90px; height:35px'>Ingresar</button> &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://youtu.be/8vJgb-mmHyE?t=3" id="idrecuperar" target="_blank"> &nbsp; &nbsp; &nbsp; <img src="https://img.icons8.com/fluent/22/000000/error.png" style="vertical-align:-6px;"/>&nbsp; <font size="2"> He olvidado mi contraseña</font></a>
-            
-            <br>
-            <br>
+                <button onclick="ingresar()" id="idboton" style='width:90px; height:35px'>Ingresar</button> &nbsp;
+                <button id="idcrearcuenta" onclick="mostrar()" style='width:180px; height:35px'>Deseo crear una cuenta</button>
 
             <div id="contenido">
+  
+        </div>
 
-               
-            </div>
+    </section>
 
-            <h1>Registro de Usuarios <img src="https://img.icons8.com/fluent/40/000000/conflict.png" style="vertical-align:-10px;"/> </h1><br>
+
+    <section id="registrar" style="display: block;">
+
+        <div>
+
+            <h1>Registro de Usuarios&nbsp; <img src="https://img.icons8.com/fluent/40/000000/safe.png" style="vertical-align:-10px;"/> </h1><br>
 
             <img src="https://img.icons8.com/fluent/32/000000/badge.png" style="vertical-align:-8px;" style="vertical-align:middle"/> &nbsp; 
                 Correo:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-                    <input type = "email" id="idcorreo2" style='width:210px; height:25px' name = "usuario" placeholder=" &nbsp; Ingrese su correo electrónico"><br><br>
+                    <input type = "email" id="idcorreo2" style='width:210px; height:25px' name = "usuario" placeholder=" &nbsp; usuario@dominio.com"><br><br>
             <img src="https://img.icons8.com/fluent/32/000000/blog.png" style="vertical-align:-8px;" style="vertical-align:middle"/> &nbsp; 
                 Contraseña: &nbsp; &nbsp;
                     <input type = "password" id="idcontraseña2" style='width:210px; height:25px' name = "clave" placeholder=" &nbsp; Ingrese al menos 6 caracteres"><br><br><br>
             
-            <button onclick="registrar()" id="idboton2" style='width:90px; height:35px'>Registrar</button> &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://youtu.be/8vJgb-mmHyE?t=3" id="idrecuperar" target="_blank"> &nbsp; &nbsp; &nbsp; <img src="https://img.icons8.com/fluent/22/000000/error.png" style="vertical-align:-6px;"/>&nbsp; <font size="2"> Acepto terminos y condiciones</font></a>
-
+            <button onclick="registrar()" id="idboton2" style='width:100px; height:35px'>Registrarme</button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                <img src="https://img.icons8.com/fluent/28/000000/sent.png" style="vertical-align:-8px;"/>&nbsp; <font size="2"> Acepto las condiciones</font></a>
             
+        </div>        
             
-        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+        
     <script src="app.js"></script>
 
 </body>

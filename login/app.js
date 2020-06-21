@@ -1,10 +1,15 @@
+document.getElementById('registro').style.display="none";
+
 function mostrar(){
-    document.getElementById('iniciar').style.display="none";
+    document.getElementById('ingreso').style.display="none";
+    document.getElementById('registro').style.display="block";
 }
 
-function ocultar(){
-    document.getElementById('registrar').style.display="block";
+
+function btnRegresar(){
+    document.getElementById('ingreso').style.display="none";
 }
+
 
 //ingresar
 function ingresar(){
@@ -50,8 +55,7 @@ function registrar(){
 function observar(){
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
-            console.log('Existe usuario activo')
-            alert("Ha iniciado sesión")
+            
             aparece(user);
           // User is signed in.
           var displayName = user.displayName;
@@ -59,10 +63,19 @@ function observar(){
 
           console.log('*****************************');
           console.log(user.emailVerified)
+          
           console.log('*****************************');
 
           console.log(email);
           var emailVerified = user.emailVerified;
+          if(emailVerified == true){
+            alert("Bienvenido")
+                location.href ="http://www.google.com";
+                
+            
+          }else{
+            alert("Por favor Verifique su cuenta")
+          }
           var photoURL = user.photoURL;
           var isAnonymous = user.isAnonymous;
           var uid = user.uid;
@@ -71,6 +84,7 @@ function observar(){
         } else {
           // User is signed out.
           console.log('No existe usuario activo')
+          alert("No existe usuario activo")
           // ...
         }
       });
@@ -85,7 +99,6 @@ function aparece(user){
 
         contenido.innerHTML = `
     
-        <p>Bienvenido</p>
         <button onclick="cerrar()">Cerrar Sesión</button>
 
     `;
@@ -99,6 +112,7 @@ function cerrar(){
     .then(function(){
         console.log('Saliendo...')
         alert("Ha cerrado sesión")
+        document.location.reload();
 
     })
     .catch(function(error){

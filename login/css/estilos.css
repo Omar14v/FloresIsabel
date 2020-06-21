@@ -4,7 +4,7 @@ body{
 }
 
 
-#iniciar{
+#ingreso{
     
     font-family: 'Ubuntu', sans-serif;
     
@@ -30,7 +30,7 @@ body{
     
 }
 
-#registrar{
+#registro{
     
     font-family: 'Ubuntu', sans-serif;
     
@@ -62,7 +62,7 @@ body{
     
 }
 
-#idboton {
+#idboton, #idregreso {
     background-color: #0085E5;
     border-radius: 5px;
     color: #ffffff;

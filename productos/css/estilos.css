@@ -29,31 +29,38 @@ body{
     
 }
 
+#regisro{
+    display: flexbox;
+    
+}
+
 #boton {
     background-color: #80B918;
     border-radius: 5px;
     color: #ffffff;
     border-style: none;
+    cursor:pointer;
 }
 #boton:hover{
     background-color: #AACC00;
 }
 
-#botonbuscar {
-    background-color: #0a6ab8;
-    border-radius: 5px;
-    color: #ffffff;
+#btnPdf{
+    background-color: #D00000;
+    border-radius: 2px;
     border-style: none;
+    color: #ffffff;
+    cursor:pointer;
 }
-#botonbuscar:hover{
-    background-color: #0158a0;
-}
+
+
 
 #botoneditar{
     background-color: #069df4;
     border-radius: 5px;
     border-style: none;
     color: #ffffff;
+    cursor:pointer;
 }
 #botoneditar:hover{
     background-color: #007cc4;
@@ -64,6 +71,7 @@ body{
     border-radius: 5px;
     border-style: none;
     color: #ffffff;
+    cursor:pointer;
 }
 
 #botoneliminar:hover{

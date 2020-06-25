@@ -26,10 +26,10 @@
             </h1><br>
 
             <input type="number" id="id_numero" required
-            minlength="4" maxlength="8" size="10" style="width:140px; height:25px" placeholder=" &nbsp; Id: ">
-            <input type="text" id="idnombre" style="width:200px; height:25px" placeholder=" &nbsp; Nombre: ">
-            <input type="text" id="iddescripcion" style="width:200px; height:25px" placeholder=" &nbsp; Descripción: ">
-            <input type="text" id="idprecio" style="width:200px; height:25px" placeholder=" &nbsp; Precio: ">
+            minlength="4" maxlength="8" size="10" style="width:100px; height:25px" placeholder=" &nbsp; Id: ">
+            <input type="text" id="idnombre" style="width:190px; height:25px" placeholder=" &nbsp; Nombre: ">
+            <input type="text" id="iddescripcion" style="width:380px; height:25px" placeholder=" &nbsp; Descripción: ">
+            <input type="text" id="idprecio" style="width:70px; height:25px" placeholder=" &nbsp; Precio: ">
             <button id="boton" onclick="guardar()" style="width:180px; height:28px"> Registrar Nuevo Producto</button>
             <br>
             <br>
@@ -58,6 +58,23 @@
               
               </table>
 
+              <br>
+
+              <button id="btnPdf"  style="width:50px; height:28px"> PDF</button>
+              
+              <script type="text/javascript" src="src/jquery-3.3.1.slim.min.js" ></script>
+              <script type="text/javascript" src="src/jspdf.min.js" ></script>
+              <script type="text/javascript" src="src/jspdf.plugin.autotable.min.js" ></script>
+              <script type="text/javascript" src="src/tableHTMLExport.js" ></script>
+
+              <script>
+              $("#btnPdf").on("click",function(){
+                  $("#registro").tableHTMLExport({
+                      type: 'pdf',
+                      filename: 'informe.pdf'
+                  });
+              });
+            </script>
               
         </div>
     </section>

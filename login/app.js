@@ -23,7 +23,7 @@ function ingresar(){
         var errorCode = error.code;
         var errorMessage = error.message;
 
-        console.log(errorCode);
+        console.log(correo);
         console.log(errorMessage);
         // ...
       });
@@ -68,7 +68,9 @@ function observar(){
 
           console.log(email);
           var emailVerified = user.emailVerified;
-          if(emailVerified == true){
+          var uid = user.uid;
+
+          if(uid == true, emailVerified == true){
             alert("Bienvenido")
                 location.href ="http://www.google.com";
                 
